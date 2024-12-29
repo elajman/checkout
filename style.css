@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url(/img/Pantalla\ IZZY\ PALLETTE\ Home.jpg);
+    background-image: url(https://yaronkadstorage.blob.core.windows.net/publiccontainer/izzycheckout/background.jpg);
     margin: 0;
     padding: 0;
     display: flex;
@@ -17,15 +17,15 @@ p {
     font-size: 1.2em;
     color: #666;
 }
-.payment-form {
-    background: #1075ab;
+
+#payment-form {
+    background-color: #1075ab;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 10px; 
-}
+    margin-bottom: 10%;
 
 label {
     display: block;
@@ -33,7 +33,6 @@ label {
     font-weight: bold;
     color: white;
 }
-
 input[type="text"], input[type="email"] {
     width: 100%;
     padding: 10px;
@@ -42,9 +41,8 @@ input[type="text"], input[type="email"] {
     border-radius: 5px;
     box-sizing: border-box;
 }
-
 button {
-    background-color: #0b427d;
+    background-color: #013872;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -53,15 +51,12 @@ button {
     font-size: 1em;
     width: 100%;
 }
-
 button:hover {
-    background-color: #0056b3;
+    background-color: #6d90b6;
 }
-
 .g-recaptcha {
     margin: 15px 0;
 }
-
 #recurly-elements {
     margin-bottom: 15px;
 }
@@ -75,20 +70,28 @@ button:hover {
     margin-top: 5%;
   }
 
-.title-text{
-    color: white;
-    margin-bottom: 25px;
-    margin: 45px;
-    font-weight: bolder;
-    font-size: xxx-large;
+ /* .container {
+    width: 100%;
+    margin-left: 5%;
+    padding: 30px;
+  }*/
+
+  .title-text {
+    color: white !important;
+    margin-bottom: 25px !important;
+    margin: 45px !important;
+    font-weight: bolder !important;
+    font-size: xx-large !important;
+    width: fit-content !important;
 }
+
 .subtitle{
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     margin-bottom: 10%;
-    color: #4199fd;
+    color:whitesmoke;
   
 }
 .subtitle-II{
@@ -98,7 +101,7 @@ button:hover {
     text-align: center;
     margin-top: -9%;
     margin-bottom: 8%;
-    color: rgb(34, 24, 5);
+    color: white;
 }
 .side-text{
     color: white;
@@ -109,23 +112,83 @@ button:hover {
 ::marker {
     color: #4744bd;
 }
-#payment-detail {
-    background-color: #1075ab;
-    border-radius: 10px;
-    box-sizing: border-box;
-    padding: 20px;
+
+img.side_image {
+    width: 85%;
+    border-radius: 13px;
+    margin-left: 10%;
+}
+/*media queries*/
+
+
+    .h3, h3 {
+        font-size: 1.75rem;
+        color: white;
+    }
+
+#summary{
+    color: white;
 }
 
-.payment-form-detal {
+.payment-detail {
     color: white;
-    padding: 10px;
-    margin: auto;
-}
-i.fa.fa-tags {
-    color: white !important;
-    
 }
 
-#dynamic-saving{
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-bottom: 1%;
+    margin-top: 5%;
+}
+
+span.card-icon {
     color: white;
+}
+
+div#description-titles {
+    width: 45%;
+    margin-left: 5%;
+}
+
+img, svg {
+    vertical-align: middle;
+    width: 22px;
+    margin-top: -2px;
+    padding: 2px;
+}
+
+/*style for error field validartion
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}*/
 }
