@@ -1,4 +1,3 @@
-
 // Configure Recurly
 recurly.configure('ewr1-MetLt2zdPoqf0mwqiB4taf');
 
